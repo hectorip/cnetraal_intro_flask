@@ -20,7 +20,7 @@ def get_user_message(body):
     return message.get("text")
 
 def send_message():
-    PAGE_ACCESS_TOKEN = "EAADAic8CH4cBAIYFa88rsBzvWNqPkYyXfwomoLGOX0yyHTRLP1bEkSlSOCuOWcgjY7xJ1hfZAuJGEZA8j2ZBbjfy3QZC2KHkm6ZCgwYk09Qg3e4B7uiKKWWFplaTCmQZB4nyhoZAlAtRsI6BNshJzq4SQe6ixrZAdlk7dyZCLgzWPRQZDZD"
+    PAGE_ACCESS_TOKEN = "ACCESS_TOKEN"
     fb_url = "https://graph.facebook.com/v2.6/me/messages?access_token=" + PAGE_ACCESS_TOKEN
     body = json.loads(request.data)
     fbid = get_sender_id(body)
